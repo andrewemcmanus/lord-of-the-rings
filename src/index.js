@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const trilogy = {
+  title: ['The Fellowship of the Ring', 'The Two Towers', 'The Return of the King'],
+  hours: ['2', '2', '3'],
+  minutes: ['58', '59', '21']
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App trilogy={trilogy}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
